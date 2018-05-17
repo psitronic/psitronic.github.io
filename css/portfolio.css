@@ -63,7 +63,7 @@ p {
 
 #contact-icons{
     color: white;
-    font-size: 30px;
+    font-size: 36px;
     padding-bottom: 10px;
 }
 
@@ -163,8 +163,4 @@ h3{
 
 .tiles{
 	margin-top: 30px;
-}
-
-#contact-icons i{
-	margin: 100px;
 }
