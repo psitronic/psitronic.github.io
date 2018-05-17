@@ -1,0 +1,166 @@
+body{
+    height: 100%;
+}
+
+html{
+    height: 100%;
+}
+
+.parallax{
+    background-image: url("https://images.unsplash.com/photo-1516906571665-49af58989c4e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e8d5ba4d35cf055ea0cfcd020e5f14c2&auto=format&fit=crop&w=1921&q=80");
+    min-height: 100%; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.welcome-content{
+    text-align: center;
+    padding-top: 10%;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Marvel', sans-serif;
+    font-weight: 400;
+}
+
+.section{
+    text-align: center;
+    min-height: 50%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.grey{
+	background: #F0F0F0;
+}
+
+#contact-section{
+	color: #C0C0C0;
+    background: black;
+    text-align: center;
+    min-height: 15%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+h2{
+	margin-bottom: 30px;
+	font-family: 'Advent Pro', sans-serif;
+	font-weight: 700;
+	font-size: 50px;
+}
+
+p {
+    font-family: 'Raleway', sans-serif;
+	font-size: 24px;
+}
+
+#copyright{
+	color: #808080;
+	font-size: 16px;
+}
+
+#contact-icons{
+    color: white;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+.navbar{
+    /*background: #2c3e50;*/
+    border: 0;
+    background: black;
+    /*background: transparent;*/
+}
+
+.navbar-inverse .navbar-nav>li>a{
+    color: #C0C0C0;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.navbar-inverse .navbar-brand {
+    color: white;
+}
+
+#contact-icons a{
+	color: #C0C0C0;
+}
+
+h3{
+	text-transform: uppercase;
+	font-family: Raleway, Arial;
+	font-weight: 700;
+}
+
+.btn-default{
+	font-family: Arial;
+	font-size: 20px;
+	color: black;
+	background-color: white;
+	border: 2px solid black;
+}
+
+
+.btn-default:visited{
+	color: black;
+	background-color: white;
+	border: 2px solid black;
+}
+
+.btn-default:hover {
+	color: white;
+	background-color: black;
+	border: 2px solid white;
+}
+
+.btn-default:active{
+	color: black;
+	background-color: white;
+	border: 2px solid black;
+}
+
+.project-description{
+	font-family: Raleway, Arial, sans-serif;
+	font-size: 18px;
+	font-style: italic;
+}
+
+.project-tools{
+	font-family: Raleway, Arial, sans-serif;
+	font-size: 22px;
+	color: darkblue;
+}
+
+
+.grad1 {
+    background: white;
+	background-color: #ffffff;
+	background: -webkit-repeating-linear-gradient(black, white);
+	background: -moz-repeating-linear-gradient(black, white);
+	background: repeating-linear-gradient(black, white);
+	-webkit-background-size: 3px 3px;
+	-moz-background-size: 3px 3px;
+	background-size: 3px 3px;
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.two-col{
+	text-align: left;
+    font-family: 'Raleway', sans-serif;
+	font-size: 24px;
+}
+
+#about-section li{
+    font-family: 'Raleway', sans-serif;
+	font-size: 21px;
+}
+
+.tiles{
+	margin-top: 30px;
+}
