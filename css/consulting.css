@@ -110,6 +110,18 @@ h3, .h3 {
 
 .mono { font-family: var(--mono); }
 
+.text-link {
+  color: var(--charcoal);
+  text-decoration: underline;
+  text-decoration-color: var(--silver);
+  text-underline-offset: 2px;
+  transition: text-decoration-color 0.2s ease;
+}
+
+.text-link:hover {
+  text-decoration-color: var(--charcoal);
+}
+
 /* --------------------------------------------------------------------------
    Layout
    -------------------------------------------------------------------------- */
@@ -436,12 +448,12 @@ section {
 }
 
 .work__item {
-  margin-bottom: 1.25rem;
+  margin-bottom: 0.5rem;
 }
 
 .work__link {
   display: block;
-  padding: 0.75rem 0;
+  padding: 0.2rem 0;
   color: var(--charcoal);
   font-size: var(--small);
   transition: color 0.2s ease;
