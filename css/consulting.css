@@ -325,6 +325,27 @@ section {
   color: var(--charcoal);
 }
 
+.about__cv {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: var(--small);
+  color: var(--slate);
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--silver);
+  transition: all 0.2s ease;
+}
+
+.about__cv:hover {
+  color: var(--charcoal);
+  border-color: var(--charcoal);
+}
+
+.about__cv svg {
+  width: 14px;
+  height: 14px;
+}
+
 /* --------------------------------------------------------------------------
    Services
    -------------------------------------------------------------------------- */
