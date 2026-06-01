@@ -1,301 +1,279 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Andrey A.Sidorenko</title>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <link href="https://fonts.googleapis.com/css?family=Advent+Pro:400,700|Marvel:400,700|Raleway:400,700" rel="stylesheet">
-        <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-        <link rel="stylesheet" type="text/css" href="css/portfolio.css">
-        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    </head>
-    <body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrey Sidorenko — AI Consulting</title>
+    <meta name="description" content="Senior AI consultant helping companies ship production AI systems. From prototype to deployment in weeks, not months.">
 
-        <nav id="navbar" class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
-            <div class="container-fluid">
-                
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarCollapse">
-                        <span class="sr-only">Navigating Toggle</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="#welcome-section"><img src="images/favicon.ico" width="24"></a>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/consulting.css">
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+
+<nav class="nav">
+    <div class="container nav__inner">
+        <a href="#" class="nav__logo">ANDREY SIDORENKO</a>
+        <ul class="nav__menu">
+            <li><a href="#about" class="nav__link">About</a></li>
+            <li><a href="#services" class="nav__link">Services</a></li>
+            <li><a href="#work" class="nav__link">Work</a></li>
+            <li><a href="#contact" class="nav__link">Contact</a></li>
+        </ul>
+        <button class="nav__toggle" aria-label="Menu">
+            <span></span>
+        </button>
+    </div>
+</nav>
+
+<main>
+    <!-- Hero -->
+    <section class="hero" id="hero">
+        <div class="container">
+            <div class="hero__content">
+                <p class="label hero__label">AI Research & Engineering</p>
+                <h1 class="hero__title">AI systems built to <em>actually work</em></h1>
+                <p class="hero__lead">There's a big gap between an AI demo and something you can rely on in production. I've spent my career closing that gap — building systems that don't just work in the lab, but keep working when real users and real data show up.</p>
+                <a href="#contact" class="hero__cta">
+                    Start a conversation
+                    <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about__grid">
+                <div class="about__image">
+                    <img src="images/photo.png" alt="Andrey Sidorenko" class="about__photo">
                 </div>
-
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#welcome-section" class="current">Home</a></li>
-                        <li><a href="#about-section" class="current">About</a></li>
-                        <li><a href="#projects-section">Projects</a></li>
-                        <li><a href="#presentations-section">Presentations</a></li>
-                        <li><a href="#tools-section">MOOCs</a></li>
-                        <li class="disabled"><a href="#" target="_blank">Blog</a></li>
-                        <li><a href="#contact-section">Contact</a></li>
-                    </ul>
-                </div>
-            </div> 
-        </nav>  <!-- Navigation bar section end-->
-
-        <!-- Welcome Section -->
-        <div id="welcome-section" class="parallax">
-            <div class="container-fluid">
-                
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="welcome-content">
-                            <h1>Andrey A. Sidorenko</h1>
-                            <h1>Researcher and software / web developer</h1>
-                            <h1>Available for interesting projects & collaboration</h1>
-                            <h1>Based in Vienna, Austria</h1>
+                <div class="about__content">
+                    <h2>Making AI work outside the lab</h2>
+                    <p class="about__text">Here's what I've noticed after fifteen years in this field: most AI projects don't fail because the model is bad. They fail because nobody thought through what happens when you put it in front of real users, real data, and real constraints. That's where I come in.</p>
+                    <p class="about__text">I spent seven years at <a href="https://mostly.ai/" target="_blank" rel="noopener" class="text-link">MOSTLY AI</a> (Vienna, Austria), starting as a developer and eventually leading the AI research team. The main thing I built there was a generative model for synthetic data — the kind banks and healthcare companies use when they need realistic data but can't touch the real thing for privacy reasons. It had to be fast, it had to be accurate, and it had to come with mathematical privacy guarantees. No shortcuts.</p>
+                    <p class="about__text">Along the way, I worked on systems that combine different types of data — tables, text, images, time series — into something coherent. I built tools that let you inject business rules into neural networks (because sometimes the model needs to know that Tuesdays are different from Wednesdays) and benchmark deep learning models. And I spent a lot of time on the optimization stuff: getting models to train across multiple GPUs, making inference fast enough to be useful, building the testing pipelines that catch problems before users do.</p>
+                    <p class="about__text">Before all this, I was a physicist — designing control systems for experiments that ran at temperatures close to absolute zero. Different field, but the same lesson: when your software has to work, you learn to build it differently. PhD from Moscow State University. Currently based in Vienna.</p>
+                    <div class="about__meta">
+                        <div class="about__meta-item">
+                            <span class="label">Experience</span>
+                            <span class="about__meta-value">15+ years</span>
                         </div>
+                        <div class="about__meta-item">
+                            <span class="label">Publications</span>
+                            <span class="about__meta-value">50+ papers</span>
+                        </div>
+                        <div class="about__meta-item">
+                            <span class="label">Citations</span>
+                            <span class="about__meta-value">1,500+</span>
+                        </div>
+                        <a href="assets/cv.pdf" target="_blank" rel="noopener" class="about__cv mono">
+                            Download CV
+                            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 12L12 4M12 4H6M12 4v6"/></svg>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
+    </section>
 
-        <!-- About Section -->
-        <div id="about-section" class="section grey">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <h2>About me</h2>
-                    </div>
+    <!-- Services -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="services__header">
+                <p class="label">Services</p>
+                <h2>Practical AI work, not slide decks</h2>
+            </div>
+            <div class="services__grid">
+                <div class="service">
+                    <span class="service__number">01</span>
+                    <h3 class="service__title">Prototype Sprint</h3>
+                    <p class="service__desc">Two to four weeks. You get a working AI system — not a demo, but something your team can build on. LLM applications, data pipelines, computer vision, generative models.</p>
                 </div>
-
-                <div class="row">
-                    <div class="col-lg-12">
-                        <img src="images/photo.jpg" class="responsive my_photo" alt="My photo">
-                    </div>
+                <div class="service">
+                    <span class="service__number">02</span>
+                    <h3 class="service__title">Production Development</h3>
+                    <p class="service__desc">Take a prototype to production. Architecture decisions, distributed training, inference optimization, deployment. The unglamorous work that makes AI actually run.</p>
                 </div>
-
-                <div class="row two-col">
-                    <div class="col-lg-12">
-                        <p>I'm a PhD in theoretical physics (Moscow State University) and self-taught software developer. While I'm proficient in implementing complex algorithms for numerical computations and data analysis, my real expertise is in designing and building real-time data acquisition systems.</p>
-
-                        <p>My personal interests also include web programming, in particular, back-end web development and API microservices. I'm passionate about algorithms, AI and blockchain technologies.</p>
-                    
-                        <h3>Highlights:</h3>
-                        <ul>
-                            <li>Built a data acquisition system in <em>Python</em> to control complex scientific equipment/devices and monitor/acquire various parameters (temperature, pressure, etc.) via different interfaces (GPIB, LAN, serial, etc.). This software allows to operate automatically the Dilution Refrigirator with a Nuclear Demagnetization Stage (~&#8364 1'000'000) at Vienna Technical University, Austria, saving hundreds personnel hours.</li>
-                            <li>Created libraries for numerical computing in <em>Fortran</em> (matrix diaganolization, optimization procedures, self-consistent solution of equations, etc.) which allowed to calculate physical properties of different materials and explain scientific experimental data.</li>
-                        </ul>                    
-                        <p>I'm available for interesting projects, collaboration and remote work. Have a project you'd like to build together? <a href="#contact-section">Contact me!</a></p>
-                    </div>
-
+                <div class="service">
+                    <span class="service__number">03</span>
+                    <h3 class="service__title">System Integration</h3>
+                    <p class="service__desc">Connect AI models to your existing infrastructure. APIs, databases, cloud services, on-premise constraints. I've dealt with the compliance requirements.</p>
+                </div>
+                <div class="service">
+                    <span class="service__number">04</span>
+                    <h3 class="service__title">Technical Training</h3>
+                    <p class="service__desc">Get your engineering team up to speed. Hands-on workshops covering LLM fundamentals, fine-tuning, prompt engineering, and production deployment patterns.</p>
                 </div>
             </div>
         </div>
+    </section>
 
-        <!-- Projects Section -->
-        <div id="projects-section" class="section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div>
-                            <h2>Selected Projects</h2>                    
-                        </div>
+    <!-- Work -->
+    <section class="work" id="work">
+        <div class="container">
+            <div class="work__header">
+                <p class="label">Selected Work</p>
+                <h2>Research that shipped</h2>
+                <p>Selected AI publications, profiles, and professional history.</p>
+            </div>
+            <div class="work__categories">
+                <div class="work__category">
+                    <h3 class="label">Research</h3>
+                    <div class="work__item">
+                        <a href="https://arxiv.org/abs/2501.12012" target="_blank" rel="noopener" class="work__link">
+                            <span>
+                                TabularARGN: A Flexible and Efficient Auto-Regressive Framework for Generating High-Fidelity Synthetic Data
+                                <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 12L12 4M12 4H6M12 4v6"/></svg>
+                            </span>
+                        </a>
+                        <span class="work__org">arXiv:2501.12012</span>
+                    </div>
+                    <div class="work__item">
+                        <a href="https://arxiv.org/abs/2504.01908" target="_blank" rel="noopener" class="work__link">
+                            <span>
+                                Benchmarking Synthetic Tabular Data: A Multi-Dimensional Evaluation Framework
+                                <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 12L12 4M12 4H6M12 4v6"/></svg>
+                            </span>
+                        </a>
+                        <span class="work__org">arXiv:2504.01908</span>
+                    </div>
+                    <div class="work__item">
+                        <a href="https://arxiv.org/abs/2508.06647" target="_blank" rel="noopener" class="work__link">
+                            <span>
+                                Privacy-Preserving Tabular Synthetic Data Generation Using TabularARGN
+                                <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 12L12 4M12 4H6M12 4v6"/></svg>
+                            </span>
+                        </a>
+                        <span class="work__org">arXiv:2508.06647</span>
+                    </div>
+                    <div class="work__item">
+                        <a href="https://arxiv.org/abs/2505.02659" target="_blank" rel="noopener" class="work__link">
+                            <span>
+                                A Note on Statistically Accurate Tabular Data Generation Using Large Language Models
+                                <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 12L12 4M12 4H6M12 4v6"/></svg>
+                            </span>
+                        </a>
+                        <span class="work__org">arXiv:2505.02659</span>
+                    </div>
+                    <div class="work__item">
+                        <span class="work__link" style="cursor:default">
+                            <span>TabularARGN: An Auto-Regressive Generative Network for Tabular Data Generation</span>
+                        </span>
+                        <span class="work__org">EurIPS 2025 Workshop: AI for Tabular Data</span>
+                    </div>
+                    <div class="work__item">
+                        <a href="https://arxiv.org/abs/2508.00718" target="_blank" rel="noopener" class="work__link">
+                            <span>
+                                Democratizing Tabular Data Access with an Open-Source Synthetic Data SDK
+                                <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 12L12 4M12 4H6M12 4v6"/></svg>
+                            </span>
+                        </a>
+                        <span class="work__org">arXiv:2508.00718</span>
                     </div>
                 </div>
-
-                <div class="row">
-                    <div class="col-lg-12">
-                        <p>All projects are available on <a href="https://github.com/psitronic" target="_blank">GitHub</a></p>
+                <div class="work__category">
+                    <h3 class="label">Profiles</h3>
+                    <div class="work__item">
+                        <a href="https://github.com/psitronic" target="_blank" rel="noopener" class="work__link">
+                            <span>
+                                GitHub
+                                <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 12L12 4M12 4H6M12 4v6"/></svg>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="work__item">
+                        <a href="https://scholar.google.com/citations?user=ROd-bpsAAAAJ&hl=en" target="_blank" rel="noopener" class="work__link">
+                            <span>
+                                Google Scholar
+                                <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 12L12 4M12 4H6M12 4v6"/></svg>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="work__item">
+                        <a href="https://www.linkedin.com/in/sidorenko-andrey/" target="_blank" rel="noopener" class="work__link">
+                            <span>
+                                LinkedIn
+                                <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 12L12 4M12 4H6M12 4v6"/></svg>
+                            </span>
+                        </a>
                     </div>
                 </div>
-
-                <div class="row tiles">
-                    <div class="col-lg-4 col-sm-6">
-                        <div class="thumbnail">
-                            <img src="https://camo.githubusercontent.com/d521ca4ba0d01d705f2dcd2fac82c393c0d19ae3/68747470733a2f2f6370773663772e64622e66696c65732e316472762e636f6d2f79346d514b4f376f314a7867786739474254494b6e48637441535f5a6846634242746734766635374f71324537305f6f733646635968514169344668467951316858784e6b4e4f5442746d64747a314c4c4f52714d304d42347538457a4f72416f486643784a77763250595678665970476b79465564423443733047544b552d6e5f77796b4841772d584a46784a7868754c37746f5a5a785147423143743559457a316e58487561686566517358735a754f5f45343231383836525a68743733457566306a4e7a61586c427059355232533251653033485a413f77696474683d343831266865696768743d3338342663726f706d6f64653d6e6f6e65" class="responsive">
-                            <div class="caption">
-                                <h3>Wage of Fear</h3>
-                                <p class="project-description">An arcade game</p>
-                                <p class="project-tools">Python / pygame</p>
-                                <p><a href="https://github.com/psitronic/Wages_Of_Fear" class="btn btn-default" role="button" target="_blank">View project</a></p>
-                            </div>
-                        </div>
+                <div class="work__category">
+                    <h3 class="label">Track Record</h3>
+                    <div class="work__item work__item--highlight">
+                        <span class="work__role">7 years at MOSTLY AI</span>
+                        <p class="work__impact">Built the generative AI engine now used by enterprise clients in banking, insurance, and healthcare across Europe</p>
                     </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <div class="thumbnail">
-                            <img src="https://cpvv6a.db.files.1drv.com/y4mjSkWNxlNnNxA1f8QJ-xInh4R6KzbS1rcGwmCPgt_jLiaSO9zy9DP8R_6QFS65yLIKwd7LqMoCeh_lSCPn840A9CMRTzdpnld_tC2T4fekPXFoa1t8T7RRiZ-mGAHS6BxA_BTpS1u6i7JGJdjTR48s0dTejtwOlCpvu9O3rP_17HA166Wxt6MsZEvadKTjWqqD05UhxMcdWH-7526Ysv9Hw?width=970&height=777&cropmode=none"  class="responsive">
-                            <div class="caption">
-                                <h3>GHS DRS1000 Monitor</h3>
-                                <p class="project-description">A GUI application to control scientific equipment</p>
-                                <p class="project-tools">Python / Qt / PyQt / pySerial</p>
-                                <p><a href="https://github.com/psitronic/GHS-DRS1000" class="btn btn-default" role="button" target="_blank">View project</a></p>
-                            </div>
-                        </div>
+                    <div class="work__item work__item--highlight">
+                        <span class="work__role">Developer → Team Lead → Head of Research</span>
+                        <p class="work__impact">Led the team that shipped TabularARGN — SOTA results, 10-100× faster than competitors</p>
                     </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <div class="thumbnail">
-                            <img src="https://dqqkcq.db.files.1drv.com/y4mzt8JY3CY7BUeiOjjahFxQwtiFonVqB8i9lcUSB0kO_HwIIA5d8uR9lwgcqiBp2drSxWZC13aLyKl5QV0oSegmXKhTy80zkrx7fm6a0YVwHxgFstTRJUpWYOjadQdGA4vfkdMB2BeQeqI9ZsdcCtBDTvux-wVysy03dUfTCyNbH69qSyxEH0iAARuqU1J_VKzkCJsCE6LSj0xlf3FkQI26A?width=481&height=361&cropmode=none"  class="responsive">
-                            <div class="caption">
-                                <h3>WebTags</h3>
-                                <p class="project-description">A webapp to communicate</p>
-                                <p class="project-tools">JavaScript / node.js / express.js / MongoDB</p>
-                                <p><a href="https://github.com/psitronic/serverTagAPI" class="btn btn-default" role="button" target="_blank">View project</a></p>
-                            </div>
-
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="row tiles">
-                    <div class="col-lg-4 col-sm-6">
-                        <div class="thumbnail">
-                            <img src="images/weatherApp.png"  class="responsive">
-                            <div class="caption">
-                                <h3>Weather App</h3>
-                                <p class="project-description">The weather in your current location</p>
-                                <p class="project-tools">jQuery / JavaScript / HTML5 / CSS3</p>
-                                <p><a href="projects/weatherApp/index.html" class="btn btn-default" role="button" target="_blank">View project</a></p>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <div class="thumbnail">
-                            <img src="images/wikiViewer.png"  class="responsive">
-                            <div class="caption">
-                                <h3>Wiki Viewer</h3>
-                                <p class="project-description">To search for Wikipedia articles</p>
-                                <p class="project-tools">jQuery / JavaScript / HTML5 / CSS3</p>
-                                <p><a href="projects/wikiViewer/index.html" class="btn btn-default" role="button" target="_blank">View project</a></p>
-                            </div>
-
-                        </div>
-                    </div>                    
-                    <div class="col-lg-4 col-sm-6">
-                        <div class="thumbnail">
-                            <img src="images/quote.png"  class="responsive">
-                            <div class="caption">
-                                <h3>Random Quote Viewer</h3>
-                                <p class="project-description">Displays and twitts random quotes</p>
-                                <p class="project-tools">jQuery / JavaScript / HTML5 / CSS3</p>
-                                <p><a href="projects/quote/index.html" class="btn btn-default" role="button" target="_blank">View project</a></p>
-                            </div>
-
-                        </div>
-                    </div>                    
-
-                </div> 
-            </div> 
-        </div>
-        
-        <!-- Tools Section -->
-        <div id="tools-section" class="section grey">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <h2>Professional Development</h2>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-12 two-col">
-                        <diResponsive Web Design Certificatev>
-                        <p>I use open online course (MOOC) platforms such as <a href="https://edx.org" target="#">edX</a>, <a href="https://udemy.org" target="#">Udemy</a> and <a href="https://university.mongodb.com" target="#">MongoDB</a> to take courses offered by accredited universities and training programs, including MIT and MongoDB University, to enchance skills in: Web and Software Development with JavaScript, Python, MongoDB.</p>
-                            <ul>
-                                <li>6.00.1x: Introduction to Computer Science and Programming Using Python - Massachusetts Institute of Technology through edX (2018) /<a href="https://courses.edx.org/certificates/ff62d96c4620474085e30dbe72e4cb9e" target="_blank">see certificate</a>/</li>
-                                <li>M101P: MongoDB for Developers - MongoDB University (2018) /<a href="http://university.mongodb.com/course_completion/ab9c1a75-e18f-494f-b6d9-9aa646a2" target="_blank">see certificate</a>/</li>
-                                <li>JavaScript Algorithms and Data Structures - FreeCodeCamp (2018)  /<a href="https://www.freecodecamp.org/certification/psitronic/javascript-algorithms-and-data-structures" target="_blank">see certificate</a>/</li>
-                                <li>APIs and Microservices - FreeCodeCamp (2018)  /<a href="https://www.freecodecamp.org/certification/psitronic/apis-and-microservices" target="_blank">see certificate</a>/</li>
-                                <li>Responsive Web Design - FreeCodeCamp (2018)  /<a href="https://www.freecodecamp.org/certification/psitronic/responsive-web-design" target="_blank">see certificate</a>/</li>
-                            </ul>
-                            <p><i>In Progress:</i> <a href="https://university.mongodb.com/courses/M121/about" target="#">M121: The MongoDB Aggregation Framework</a> (MongoDB University),<a href="https://www.udemy.com/the-web-developer-bootcamp/learn/v4/overview" target="#">The Web Developer Bootcamp</a> (Udemy), <a href="" target="#">Back End Development Certificates</a> (FreeCodeCamp), <a href="https://eu.udacity.com/course/design-of-computer-programs--cs212" target="#">Design of Computer Programs</a> and <a href="https://eu.udacity.com/course/applied-cryptography--cs387" target="#">Applied Cryptography Courses</a> (Udacity).</p>
-                        </div>
-
+                    <div class="work__item work__item--highlight">
+                        <span class="work__role">PhD Physics & Mathematics</span>
+                        <p class="work__impact">Moscow State University — 50+ papers, 1,500+ citations including Nature Physics</p>
                     </div>
                 </div>
             </div>
         </div>
+    </section>
 
-
-<!--                         <h3>edx, Inc. (MOOC platform)</h3>
-                        <p>Programming Languages: Python, JavaScript, Go, Fortran, Bash</p>
-                        <p>Node.js, Express.js</p>
-                        <p>pytest</p>
-                        <p>Glitch, Heroku</p>
-                        <p>Git/GitHub</p>
-                        <p>Data Science/Numerical Calculations/Computations: Numpy, Scipy, Pandas</p>
-                        <p>Visualization: Matplolib, Seaborn</p>
-                        <p>GUI programming: PyQt</p>
-                        <p>Database: MongoDB</p>
-                        <p>CSS3, HTML5, Bootstrap</p>
- -->
-
-
-        <!-- Presentations Section-->
-        <div id="presentations-section" class="section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div>
-                            <h2>Presentations / Talks / Meetups</h2>
-                            <p>I'm also an active member of Vienna FreeCodeCamp, Python and Vienna School of AI Meetup Groups.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row tiles">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="thumbnail">
-                            <div class="embed-responsive embed-responsive-16by9">
-                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/kLYdYeS0ADo" allowfullscreen></iframe>
-                            </div>
-                            <div class="caption">
-                                <h3>WebTags</h3>
-                                <p class="project-description">January 2018 - Our presentation of the project at the Vienna FreeCodeCamp (<a href="https://twitter.com/freecodecampvie" target="_blank">@freecodecampvie</a>) meetup, given by Marko (<a href="https://twitter.com/okram_ovic">@okram_ovic</a>) and me.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact__inner">
+                <p class="label">Get in touch</p>
+                <h2>Let's discuss your project</h2>
+                <p class="contact__text">I take on a limited number of engagements to ensure quality. If you have an AI challenge worth solving, I'd like to hear about it.</p>
+                <a href="mailto:sidorenko.andrey@gmail.com" class="contact__email mono">sidorenko.andrey@gmail.com</a>
             </div>
         </div>
+    </section>
+</main>
 
-        <!-- Contacts Section -->
-        <div id="contact-section">
-            <div class="container-fluid">
-
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div id="chat-form">
-                            <h3>Want to chat? Contact me:</h3>
-                        </div>
-                    </div>                    
-                </div>
-
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div>
-                            <p><a href="mailto:sidorenko.andrey@gmail.com">sidorenko.andrey@gmail.com</a></p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div id="contact-icons">
-                        <a href="https://twitter.com/spintronic" target="_blank"><i class="fab fa-twitter-square"></i></a> 
-                        <a href="https://www.linkedin.com/in/sidorenko-andrey/" target="_blank"><i class="fab fa-linkedin"></i></a>  
-                        <a href="https://github.com/psitronic" target="_blank"><i class="fab fa-github"></i></a>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div id="copyright">
-                            © 2019 Andrey A Sidorenko. All rights reserved.
-                        </div>
-                    </div>
-                </div>
-            </div>
+<footer class="footer">
+    <div class="container footer__inner">
+        <div class="footer__social">
+            <a href="https://www.linkedin.com/in/sidorenko-andrey/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+            </a>
+            <a href="https://github.com/psitronic" target="_blank" rel="noopener" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/></svg>
+            </a>
         </div>
+        <p class="footer__copy">© 2026 Andrey Sidorenko</p>
+    </div>
+</footer>
 
-        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    </body>
+<script>
+// Navigation scroll effect
+const nav = document.querySelector('.nav');
+window.addEventListener('scroll', () => {
+    nav.classList.toggle('scrolled', window.scrollY > 50);
+});
+
+// Mobile menu
+const toggle = document.querySelector('.nav__toggle');
+const menu = document.querySelector('.nav__menu');
+const links = document.querySelectorAll('.nav__link');
+
+toggle.addEventListener('click', () => {
+    toggle.classList.toggle('is-open');
+    menu.classList.toggle('is-open');
+});
+
+links.forEach(link => {
+    link.addEventListener('click', () => {
+        toggle.classList.remove('is-open');
+        menu.classList.remove('is-open');
+    });
+});
+</script>
+
+</body>
 </html>
